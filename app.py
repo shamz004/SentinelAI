@@ -15,11 +15,26 @@ def home():
 def predict():
     data = request.get_json()
     text = data.get("text", "")
+    fraud_keywords = [
+    "cbI officer", "digital arrest", "account blocked",
+    "send otp", "verify bank", "urgent transfer"
+]
+
+if any(word.lower() in text.lower() for word in fraud_keywords):
+    return jsonify({
+        "input": text,
+        "prediction": "FRAUD / SCAM 🚨 (Rule-based detection)"
+    })
 
     X = vectorizer.transform([text])
     prediction = model.predict(X)[0]
 
-    result = "Positive 😊" if prediction == 1 else "Negative 😟"
+  if prediction == 1:
+    result = "SAFE ✅"
+elif prediction == 0:
+    result = "SUSPICIOUS ⚠️"
+else:
+    result = "FRAUD / SCAM 🚨" 
 
     return jsonify({
         "input": text,

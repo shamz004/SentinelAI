@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SentinelAI</title>
+</head>
+<body>
+
+    <h1>SentinelAI 🤖</h1>
+
+    <input type="text" id="text" placeholder="Enter your text">
+    <button onclick="predict()">Predict</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function predict() {
+            let text = document.getElementById("text").value;
+
+            fetch("/predict", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({text: text})
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("result").innerText =
+                    "Prediction: " + data.prediction;
+            });
+        }
+    </script>
+
+</body>
+</html>

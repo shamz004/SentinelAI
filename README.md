@@ -1,39 +1,73 @@
-# 🧠 SentinelAI - AI-Based Text Classification System
+# 🛡️ SentinelAI – Digital Public Safety Intelligence System
 
-## 🚀 Project Overview
-SentinelAI is a machine learning web application that analyzes text and predicts sentiment (Positive/Negative). It uses a trained ML model integrated with a Flask backend and a simple web UI.
+## 🚀 Problem Statement
+AI for Digital Public Safety: Defeating Counterfeiting, Fraud & Digital Arrest Scams
 
----
+## 📌 Overview
+SentinelAI is an AI-powered fraud detection platform designed to help citizens and law enforcement identify potential digital arrest scams and fraudulent communications before financial loss occurs.
 
-## ⚙️ Features
-- Real-time text prediction
-- Machine Learning model integration
-- Web-based user interface
-- REST API (`/predict`)
-- Easy to deploy
+The system analyzes suspicious text messages and communication content using Machine Learning and rule-based intelligence to provide real-time risk assessment.
 
----
+## ✨ Features
+- Real-time scam detection
+- Digital arrest scam keyword analysis
+- AI-based text classification
+- Fraud risk alerts
+- Web-based interface
+- Live cloud deployment
 
-## 🧠 Tech Stack
+## 🧠 Technologies Used
 - Python
 - Flask
 - Scikit-learn
-- HTML/CSS/JavaScript
 - Joblib
-
----
+- HTML/CSS
+- GitHub
+- Render
 
 ## 📂 Project Structure
-- app.py → Main Flask backend
-- model.pkl → Trained ML model
-- vectorizer.pkl → Text vectorizer
-- templates/ → Frontend UI
-- datasets/ → Training data
 
----
+```text
+SentinelAI/
+│
+├── app.py
+├── model.pkl
+├── vectorizer.pkl
+├── requirements.txt
+├── README.md
+├── templates/
+└── datasets/
+```
 
 ## ▶️ How to Run
 
 ```bash
 pip install -r requirements.txt
 python app.py
+```
+
+Open:
+
+http://127.0.0.1:5000
+
+## 🌐 Live Demo
+
+https://sentinelai-bdnm.onrender.com
+
+## 🎯 Sample Fraud Inputs
+
+- "CBI officer calling, send OTP immediately"
+- "Your account is blocked"
+- "You are under digital arrest"
+
+## 📈 Future Enhancements
+
+- Voice scam detection
+- WhatsApp integration
+- Geospatial fraud mapping
+- Fraud network analysis
+- Multi-language support
+
+## 👨‍💻 Author
+
+Shambhavi Mishra

@@ -35,6 +35,5 @@ python app.py
 
 Open `http://127.0.0.1:5000` in your browser.
 
-## Submission Notes
 
-Before final judging, replace the demo video and presentation deck placeholders on the landing page with your hosted video and slides/PDF links.
+ The demo video and presentation deck placeholders on the landing page with the hosted video and slides/PDF links are present  over webpage for better understanding 

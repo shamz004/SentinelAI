@@ -2,3 +2,6 @@ flask
 scikit-learn
 joblib
 gunicorn
+pillow
+numpy
+requests

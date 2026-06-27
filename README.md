@@ -1,73 +1,40 @@
-# 🛡️ SentinelAI – Digital Public Safety Intelligence System
+# SentinelAI - AI-Powered Digital Public Safety Intelligence Platform
 
-## 🚀 Problem Statement
-AI for Digital Public Safety: Defeating Counterfeiting, Fraud & Digital Arrest Scams
+SentinelAI is a Flask prototype for detecting, explaining, and visualizing digital fraud risks for law enforcement teams, financial institutions, and citizens.
 
-## 📌 Overview
-SentinelAI is an AI-powered fraud detection platform designed to help citizens and law enforcement identify potential digital arrest scams and fraudulent communications before financial loss occurs.
+## Prototype Modules
 
-The system analyzes suspicious text messages and communication content using Machine Learning and rule-based intelligence to provide real-time risk assessment.
+- Citizen Fraud Shield for suspicious SMS/chat risk analysis
+- Digital Arrest Alerting for police, CBI, court, and arrest impersonation scripts
+- Counterfeit CV Agent for uploaded currency image triage
+- Voice Scam Detection for suspicious call audio uploads
+- Geo Intelligence and Fraud Network Graph previews for investigative dashboards
 
-## ✨ Features
-- Real-time scam detection
-- Digital arrest scam keyword analysis
-- AI-based text classification
-- Fraud risk alerts
-- Web-based interface
-- Live cloud deployment
+## Website Structure
 
-## 🧠 Technologies Used
-- Python
-- Flask
-- Scikit-learn
-- Joblib
-- HTML/CSS
-- GitHub
-- Render
+- `/` - submission-ready landing page with demo CTA, rubric-aligned sections, architecture, live prototype modules, impact, and scalability
+- `/dashboard` - operational analytics dashboard with KPIs, category charts, alert feed, regional heatmap, and trend view
+- `/predict` - text risk API
+- `/currency-check` - currency image upload API
+- `/voice-check` - voice upload API
+- `/geo-data` and `/network-data` - intelligence feed APIs
 
-## 📂 Project Structure
+## Tech Stack
 
-```text
-SentinelAI/
-│
-├── app.py
-├── model.pkl
-├── vectorizer.pkl
-├── requirements.txt
-├── README.md
-├── templates/
-└── datasets/
-```
+- Python and Flask
+- Modular AI/risk services
+- Chart.js
+- HTML, CSS, and vanilla JavaScript
 
-## ▶️ How to Run
+## How to Run
 
 ```bash
 pip install -r requirements.txt
 python app.py
 ```
 
-Open:
+Open `http://127.0.0.1:5000` in your browser.
 
-http://127.0.0.1:5000
+## Submission Notes
 
-## 🌐 Live Demo
-
-https://sentinelai-bdnm.onrender.com
-
-## 🎯 Sample Fraud Inputs
-
-- "CBI officer calling, send OTP immediately"
-- "Your account is blocked"
-- "You are under digital arrest"
-
-## 📈 Future Enhancements
-
-- Voice scam detection
-- WhatsApp integration
-- Geospatial fraud mapping
-- Fraud network analysis
-- Multi-language support
-
-## 👨‍💻 Author
-
-Shambhavi Mishra
+Before final judging, replace the demo video and presentation deck placeholders on the landing page with your hosted video and slides/PDF links.

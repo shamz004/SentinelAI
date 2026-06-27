@@ -1,0 +1,4 @@
+text,label
+"CBI officer calling, send OTP",fraud
+"Your account is blocked, verify now",fraud
+"Hello how are you",safe

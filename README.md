@@ -33,7 +33,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open `http://127.0.0.1:5000` in your browser.
+Open ttp://127.0.0.1:5000 in your browser.
 
 
  The demo video and presentation deck placeholders on the landing page with the hosted video and slides/PDF links are present  over webpage for better understanding 
